@@ -1,8 +1,8 @@
 (map!
-
- (:map input-decode-map
    :i "C-b" #'backward-char
    :i "C-f" #'forward-char)
+
+(map!
 
  ;; leader
  (:leader
@@ -39,6 +39,10 @@
 
    ;; Help
    :desc "change theme" :nv "Ts" #'counsel-load-theme
+
+   ;; search
+   :desc "project ag" :nv "sap" #'counsel-projectile-ag
+   :desc "ag file" :nv "saf" #'counsel-ag
 
    ;; buffer
    ;; :desc "buffer list" :nv "bb" #'ivy-switch-buffer

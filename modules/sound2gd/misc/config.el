@@ -7,8 +7,10 @@
         winum-auto-setup-mode-line nil
         winum-ignored-buffers '(" *which-key*"))
   (winum-mode))
+
+;; 自动补全各种括号
+(add-hook prog-mode-hook #'electric-pair-mode)
+
 ;; (after! evil-nerd-commenter
 ;;  )
-
-
 
